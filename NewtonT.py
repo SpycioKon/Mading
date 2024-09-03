@@ -1,3 +1,18 @@
+import math
+"""Công thức nội suy Newton: Dùng để tính số gần đúng với sai số nhỏ hơn định lý Lagrange 
+   Nội suy Newton trên lưới đều có cùng 1 cách làm với lưới không đều. Tuy nhiên ngược lại thì không nhé.
+   Pn(x) = a_0 + a_1(x-x_0)+a_2(x-x_0)(x-x_1)+...+a_n(x-x_0)..(x-x_n-1)
+"""
+"""
+Demo với các tọa độ x,y như sau
+
+x   y 
+0   1
+2   3
+3   2
+5   5
+6   6
+"""
 def TSP(cap, mang1, mang2):
     if cap <= 0:
         return 0
