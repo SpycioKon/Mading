@@ -1,32 +1,29 @@
+import numpy as np
 import math
-"""
-Nội suy Lagrange dùng để làm gì: Nội suy Lagrange dùng để tính số gần đúng'
-Công thức
-P = sum 0->n (y_i*l_i(x))
-với l_i = (x-x0)(x-x1)...(x-x[n-1])/(xi-x0)(xi-x1)..(xi-x[n-1]) trong đó không có x-xi trên tử và xi-xi dưới mẫu
-"""
 
-"""
-sample lấy các tọa độ x,y
-x   0   2    3
-y   7   11   28
-"""
-def l_cap(index,x):
-    sum1 = 1
-    sum2 = 1
-    for i in range(len(X)):
-        if i == index:
-            continue
-        else:
-            sum1 *= (x-X[i])
-            sum2 *= (X[index] - X[i])
-    return sum1/sum2
+# Các điểm x và y
+x = np.array([-1, 0, 1])
+y = np.array([1/3, 1, 3])
 
-X = [15,17,31,35]
-Y = [65.4,62.5,47.8,39]
-x = 16
+# Điểm cần tính giá trị của đa thức nội suy
+x_sel = math.sqrt(3)
+
+# Khởi tạo giá trị của Pn
 Pn = 0
-for i in range(len(X)):
-    print(f"Tính l_cap{i}")
-    Pn += Y[i]*l_cap(i,x)
-    print(Pn)
+
+# Hàm tính đa thức cơ sở Lagrange L_i(x)
+def l(x_sel, cap):
+    multi = 1
+    for i in range(len(x)):
+        if i == cap:
+            continue
+        multi *= (x_sel - x[i]) / (x[cap] - x[i])
+    return multi
+
+# Tính giá trị của Pn tại x_sel
+for cap, j in enumerate(y):
+    print(f"cap {cap}:")
+    Pn += j * l(x_sel, cap)
+    print(f"{Pn}")
+
+print(f"Giá trị của Pn tại x_sel = {x_sel} là: {Pn}")
