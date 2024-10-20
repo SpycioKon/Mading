@@ -5,6 +5,7 @@ import math
 """
 giải phương trình bằng phân tích choleski
 Phương pháp: Ly = B
+L.T.x = y
 
 """
 def tongDuongCheo(col,A,new_matrix):
