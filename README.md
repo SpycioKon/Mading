@@ -9,4 +9,7 @@
   + Phương pháp lặp đơn (ko cần code, do mình phải chọn hàm, điều này phải làm bằng tay, có lẽ thế)
   + Phương pháp Newton-Raphson (tiếp tuyến)
   + Phương pháp dây cung
-
+- Giải gần đúng hệ phương trình tiếp tuyến
+  + Phương pháp choleski
+  + Phương pháp Jacobi
+  + Phương pháp Gauss-seidel
