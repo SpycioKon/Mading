@@ -10,6 +10,14 @@
   + Phương pháp Newton-Raphson (tiếp tuyến)
   + Phương pháp dây cung
 - Giải gần đúng hệ phương trình tiếp tuyến
-  + Phương pháp choleski
+  + Phương pháp khử Gauss
+  + Phương pháp Choleski
+  + Phương pháp Doolitte
   + Phương pháp Jacobi
   + Phương pháp Gauss-seidel
+- Chương 5+6
+  + Công thức hình thang
+  + công thức hình chữ nhật
+  + Công thức Simpson (n chẵn + n lẻ)
+  + Phương pháp Euler cải tiến
+  + Phương pháp RK bậc 4
