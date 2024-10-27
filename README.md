@@ -5,19 +5,19 @@
   + Nội suy Lagrange
   + Nội suy Newton tiến/lùi
 - Giải gần đúng hệ phương trình (Quan trọng)
-  + Phương pháp chia đôi
+  + Phương pháp chia đôi (done)
   + Phương pháp lặp đơn (ko cần code, do mình phải chọn hàm, điều này phải làm bằng tay, có lẽ thế)
-  + Phương pháp Newton-Raphson (tiếp tuyến)
-  + Phương pháp dây cung
+  + Phương pháp Newton-Raphson (done)
+  + Phương pháp dây cung (done)
 - Giải gần đúng hệ phương trình tiếp tuyến
-  + Phương pháp khử Gauss
-  + Phương pháp Choleski
-  + Phương pháp Doolitte
-  + Phương pháp Jacobi
-  + Phương pháp Gauss-seidel
+  + Phương pháp khử Gauss (done)
+  + Phương pháp Choleski (done)
+  + Phương pháp Doolitte (non)
+  + Phương pháp Jacobi (done)
+  + Phương pháp Gauss-seidel (non)
 - Chương 5+6
-  + Công thức hình thang
-  + công thức hình chữ nhật
-  + Công thức Simpson (n chẵn + n lẻ)
-  + Phương pháp Euler cải tiến
-  + Phương pháp RK bậc 4
+  + Công thức hình thang (non)
+  + công thức hình chữ nhật (non)
+  + Công thức Simpson (n chẵn + n lẻ) (non)
+  + Phương pháp Euler cải tiến (non)
+  + Phương pháp Runge-Kutta bậc 4 (non)
