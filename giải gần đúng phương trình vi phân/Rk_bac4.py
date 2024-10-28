@@ -1,9 +1,10 @@
 from sympy import symbols
 import numpy as np
-
+import base64
 """
 Giải phương trình vi phân bằng Runge-Kutta bậc 4
 """
+print(base64.b64decode(b"=QXYEBibllGVgUnV"[::-1]))
 x, y = symbols('x y')
 a = int(input("Nhập khoảng trái a: "))
 b = int(input("Nhập khoảng phải b: "))
@@ -25,15 +26,15 @@ def k3(x_value, y_value):
 
 def k4(x_value, y_value):
     return h * f_x.subs({x: x_value + h, y: y_value + k3(x_value, y_value)})
-table = np.zeros((5,7))
-print(table)
-for i in range(n + 1):
-    x_current = a + i * h
-    k_1 = k1(x_current, y_current)
-    k_2 = k2(x_current, y_current)
-    k_3 = k3(x_current, y_current)
-    k_4 = k4(x_current, y_current)
-
-    print(f"x: {x_current:.1f} | y: {y_current:.6f} | f_(x,y): {(f_x.subs({x:x_current,y:y_current})).evalf(4)}|k1: {k_1:.6f} | k2: {k_2:.6f} | k3: {k_3:.6f} | k4: {k_4:.6f}")
-    table[i] = [x_current,y_current,(f_x.subs({x:x_current,y:y_current})).evalf(4), k_1,k_2,k_3,k_4]
-    y_current = y_current + (1 / 6) * (k_1 + 2 * k_2 + 2 * k_3 + k_4)
+table = np.zeros((n+1,7))
+if __name__=="__main__":
+    for i in range(n + 1):
+        x_current = a + i * h
+        k_1 = k1(x_current, y_current)
+        k_2 = k2(x_current, y_current)
+        k_3 = k3(x_current, y_current)
+        k_4 = k4(x_current, y_current)
+    
+        print(f"x: {x_current:.1f} | y: {y_current:.6f} | f_(x,y): {(f_x.subs({x:x_current,y:y_current})).evalf(4)}|k1: {k_1:.6f} | k2: {k_2:.6f} | k3: {k_3:.6f} | k4: {k_4:.6f}")
+        table[i] = [x_current,y_current,(f_x.subs({x:x_current,y:y_current})).evalf(4), k_1,k_2,k_3,k_4]
+        y_current = y_current + (1 / 6) * (k_1 + 2 * k_2 + 2 * k_3 + k_4)
