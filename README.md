@@ -1,5 +1,6 @@
 # Mading
 ## Topic này là nơi lưu các thuật toán có liên quan đến môn tôi học
+- Lý thuyết thì không biết nhưng vấn đáp thì ok
 ### nếu thấy hay xin cho tôi 1 star và 1 fork :>
 - Sai số và xấp xỉ
   + Nội suy Lagrange (done)
